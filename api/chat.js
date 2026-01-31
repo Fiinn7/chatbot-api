@@ -48,7 +48,7 @@ export default async function handler(req, res) {
 
     res.status(200).json({ reply: output });
   } catch (error) {
-    console.error("OpenAI error:", error); // <-- log completo en Vercel
+    console.error("OpenAI API error:", error); // <-- log completo en Vercel
     res.status(500).json({ error: "Error al generar respuesta" });
   }
 }
